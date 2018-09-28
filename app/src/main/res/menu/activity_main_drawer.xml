@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/grp1">
+        <item
+            android:id="@+id/nav_first_layout"
+            android:icon="@drawable/phone"
+            android:title="전화번호 등록" />
+    </group>
+    <group android:id="@+id/grp2">
+        <item
+            android:id="@+id/nav_second_layout"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="실시간 영상" />
+    </group>
+
+    <!-- 사이드 바 menu setting  -->
+</menu>

@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 사이드 바 상단 이미지 배경  -->
+    <gradient
+        android:angle="135"
+        android:centerColor="#fdeaea"
+        android:endColor="#f2b4b4"
+        android:startColor="#FFFFFF"
+        android:type="linear" />
+</shape>

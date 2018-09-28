@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:id="@+id/content_main_layout"
+    tools:showIn="@layout/app_bar_main">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sr2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp">
+
+                <TextView
+                    android:id="@+id/empty"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text= ""/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="114dp"
+            android:text=""
+            android:textColor="#a13939"
+            android:fontFamily="@font/binggreabold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/phonegps"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text=""
+            android:textColor="#4745b7"
+            android:fontFamily="@font/binggreabold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/httpfire"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="158dp"
+            android:fontFamily="@font/binggreabold"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:textColor="#e43939"
+            android:textSize="30dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/messagesend"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="225dp"
+            android:fontFamily="@font/binggreabold"
+            android:textColor="#d6d6d6"
+            android:text="    수동으로 재난 메세지 전송 →"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
+
+
+
+
+        <TextView
+            android:id="@+id/ar"
+            android:layout_width="128dp"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="200dp"
+            android:fontFamily="@font/masque__"
+            android:gravity="left"
+            android:text="ar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#5f1bff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/k"
+            android:layout_width="128dp"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="175dp"
+            android:fontFamily="@font/masque__"
+            android:text="k"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#ff3b3b"/>
+
+        <TextView
+            android:id="@+id/thin"
+            android:layout_width="128dp"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="107dp"
+            android:fontFamily="@font/masque__"
+            android:text="Thin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#ff3b3b"
+            android:textSize="25dp"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_above="@+id/k"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="168dp"
+            app:srcCompat="@drawable/think" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            app:srcCompat="@drawable/firetruck"
+            android:layout_width="229dp"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/messagesend" />
+
+        <ImageView
+            android:id="@+id/fireicon"
+            app:srcCompat="@drawable/fireicon"
+            android:layout_width="74dp"
+            android:layout_height="96dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignEnd="@+id/address" />
+
+</RelativeLayout>

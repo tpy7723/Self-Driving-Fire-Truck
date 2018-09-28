@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sr"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+
+        <WebView
+            android:id="@+id/web_streaming"
+            android:layout_width="320dp"
+            android:layout_height="240dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sr"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="-30dp"
+        android:fontFamily="@font/binggreabold"
+        android:text=": 현재 위치"
+        android:textColor="#464646" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="-30dp"
+        android:layout_toStartOf="@+id/textView"
+        android:fontFamily="@font/binggreabold"
+        android:text="파란색 마커"
+        android:textColor="#4e6cff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="-30dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:fontFamily="@font/binggreabold"
+        android:text=": 화재 위치"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#464646" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/binggreabold"
+        android:text="\u003C 실시간 카메라 스트리밍 화면 \u003E"
+        android:textColor="#ff3939" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sr"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="-30dp"
+        android:fontFamily="@font/binggreabold"
+        android:text="빨간색 마커"
+        android:textColor="#ff3939" />
+
+</RelativeLayout>
